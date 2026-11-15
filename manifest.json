@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Vesper",
+  "version": "1.0.0",
+  "author": "Hossein Mousavi",
+  "description": "Local dark theme for sites you turn on. Nothing is sent off this computer.",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_title": "Vesper",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["schedule.js", "content.js"],
+      "css": ["dark.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

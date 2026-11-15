@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Local environment
+.env
+.env.*
+
+# Packed extension output and the private key Chrome generates for it
+*.crx
+*.pem
+web-ext-artifacts/
+
+# Dependencies, if a package manager is added later
+node_modules/
