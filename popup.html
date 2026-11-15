@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vesper</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <img src="icons/icon32.png" width="22" height="22" alt="" />
+        <strong>Vesper</strong>
+      </div>
+      <span id="version" class="version"></span>
+    </header>
+
+    <section>
+      <p id="host" class="host">Loading…</p>
+      <p id="detail" class="detail"></p>
+      <div id="site-row" class="row">
+        <span id="site-label">Dark theme</span>
+        <button
+          id="site-toggle"
+          class="switch"
+          type="button"
+          role="switch"
+          aria-checked="false"
+          aria-label="Dark theme for this site"
+        >
+          <span class="knob"></span>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <span id="schedule-label">Only during these hours</span>
+        <button
+          id="schedule-toggle"
+          class="switch"
+          type="button"
+          role="switch"
+          aria-checked="false"
+          aria-labelledby="schedule-label"
+        >
+          <span class="knob"></span>
+        </button>
+      </div>
+      <div id="hours" class="hours">
+        <label>
+          From
+          <input id="start" type="time" value="20:00" />
+        </label>
+        <label>
+          To
+          <input id="end" type="time" value="07:00" />
+        </label>
+      </div>
+      <p id="schedule-note" class="note"></p>
+    </section>
+
+    <script src="schedule.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

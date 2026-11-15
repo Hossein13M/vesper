@@ -1,0 +1,12 @@
+html.vesper-dark {
+  background-color: #fff !important;
+  filter: invert(1) hue-rotate(180deg) !important;
+}
+
+html.vesper-dark img,
+html.vesper-dark video,
+html.vesper-dark canvas,
+html.vesper-dark embed,
+html.vesper-dark object {
+  filter: invert(1) hue-rotate(180deg) !important;
+}
